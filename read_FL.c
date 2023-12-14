@@ -43,7 +43,7 @@ void read_FL(char *fname, stack_t **stack)
 					line_count, operational_code);
 			exit(EXIT_FAILURE);
 		}
-		func(stack, line_count);
+		handler(stack, line_count);
 		line_count++;
 	}
 	free(lines);
